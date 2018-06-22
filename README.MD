@@ -16,8 +16,8 @@ The important features developed for the application are:
 ![alt ios](Esempi/ios.png)
 ![alt android](Esempi/android.png)
 
-A prototype was also created for the website dedicated to the application, available at  http://travelnotesapp.altervista.org/.
+We also developed a prototype for the website dedicated to the application, available at  http://travelnotesapp.altervista.org/.
 
 Developers:
-Alessandro De Francesco
+Alessandro De Francesco,
 Gianpaolo Caprara
