@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PageViewCell" reuseIdentifier="PageViewCell" id="gTV-IL-0wX" customClass="PageViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="375"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TXa-jL-eXI" userLabel="PageBackground"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHE-Ry-6sz" userLabel="Name">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="12:15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-CX-hFr" userLabel="Hour">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milan, Italy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVS-so-sIr" userLabel="Place">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZn-yj-GrA" userLabel="MapIconButton">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="7ex-Nt-DT1"/>
+                            <constraint firstAttribute="width" constant="30" id="Avv-z8-ANR"/>
+                        </constraints>
+                        <state key="normal" image="GoogleMaps"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlT-xV-pbf" userLabel="ShareButton">
+                        <state key="normal" image="share"/>
+                    </button>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-Ox-yZD" userLabel="Contents Container">
+                        <frame key="frameInset" minX="10" minY="52" maxX="30" maxY="46"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EwS-zK-d4f" userLabel="ContentImage">
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="113-bn-6Ek" userLabel="ContentText">
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOX-DK-SlT" userLabel="ContentVideo">
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stickers" translatesAutoresizingMaskIntoConstraints="NO" id="ExY-a4-CJg">
+                                <frame key="frameInset" minX="-1" minY="-1" maxX="-1" maxY="-1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odo-6B-gNV" userLabel="PlayPauseButton">
+                                <frame key="frameInset" minX="53" minY="114" width="102" height="48"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="play"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8U-ar-Caa" userLabel="ExpandButton">
+                                <frame key="frameInset" minX="172" minY="245" width="36" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="expand"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hVS-so-sIr" firstAttribute="centerY" secondItem="hlT-xV-pbf" secondAttribute="centerY" id="3rt-y1-4t5"/>
+                <constraint firstItem="aZn-yj-GrA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="4ni-mC-P1v"/>
+                <constraint firstItem="Kh8-CX-hFr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="59S-r8-DRG"/>
+                <constraint firstItem="TXa-jL-eXI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="9TR-XD-IVK"/>
+                <constraint firstItem="hVS-so-sIr" firstAttribute="leading" secondItem="aZn-yj-GrA" secondAttribute="trailing" constant="8" id="Cc1-Hz-4UG"/>
+                <constraint firstItem="aZn-yj-GrA" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottomMargin" id="Ctw-Id-Q1Q"/>
+                <constraint firstItem="hVS-so-sIr" firstAttribute="centerY" secondItem="aZn-yj-GrA" secondAttribute="centerY" id="Uwb-PZ-x0L"/>
+                <constraint firstItem="iHE-Ry-6sz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="aIG-RR-oJ8"/>
+                <constraint firstItem="TXa-jL-eXI" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="amV-GH-rNp"/>
+                <constraint firstItem="TXa-jL-eXI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mpA-gb-9JS"/>
+                <constraint firstAttribute="trailing" secondItem="hlT-xV-pbf" secondAttribute="trailing" constant="30" id="pM5-ou-8KF"/>
+                <constraint firstItem="Kh8-CX-hFr" firstAttribute="top" secondItem="iHE-Ry-6sz" secondAttribute="bottom" constant="1" id="qBS-dm-Fpo"/>
+                <constraint firstAttribute="trailing" secondItem="hVS-so-sIr" secondAttribute="trailing" constant="68" id="w1X-ra-zhr"/>
+                <constraint firstItem="iHE-Ry-6sz" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xWc-zC-SV7"/>
+                <constraint firstItem="TXa-jL-eXI" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="zD3-GP-tr3"/>
+            </constraints>
+            <size key="customSize" width="248" height="376"/>
+            <connections>
+                <outlet property="buttonShare" destination="hlT-xV-pbf" id="gb8-M0-fR9"/>
+                <outlet property="contentImage" destination="EwS-zK-d4f" id="9lM-AH-ePh"/>
+                <outlet property="contentText" destination="113-bn-6Ek" id="2pZ-Ji-Q0N"/>
+                <outlet property="contentVideo" destination="eOX-DK-SlT" id="wBf-gW-yb9"/>
+                <outlet property="expandButton" destination="m8U-ar-Caa" id="aRJ-u9-W2W"/>
+                <outlet property="pageBackground" destination="TXa-jL-eXI" id="q8X-fD-By2"/>
+                <outlet property="placeButton" destination="aZn-yj-GrA" id="bZi-wt-pVK"/>
+                <outlet property="playPauseButton" destination="odo-6B-gNV" id="Omz-uS-X9K"/>
+                <outlet property="stickersImage" destination="ExY-a4-CJg" id="TG2-31-icZ"/>
+                <outlet property="textHour" destination="Kh8-CX-hFr" id="Rn2-Og-Lhw"/>
+                <outlet property="textName" destination="iHE-Ry-6sz" id="1RF-GJ-Gk4"/>
+                <outlet property="textPlace" destination="hVS-so-sIr" id="wVb-yX-7jc"/>
+            </connections>
+            <point key="canvasLocation" x="124" y="-116.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="GoogleMaps" width="29" height="29"/>
+        <image name="Stickers" width="160" height="300"/>
+        <image name="expand" width="36" height="36"/>
+        <image name="play" width="48" height="48"/>
+        <image name="share" width="24" height="24"/>
+    </resources>
+</document>

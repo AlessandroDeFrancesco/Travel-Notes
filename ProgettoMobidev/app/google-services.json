@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "586529995472",
+    "firebase_url": "https://thematic-bloom-141319.firebaseio.com",
+    "project_id": "thematic-bloom-141319",
+    "storage_bucket": "thematic-bloom-141319.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586529995472:android:03f0f67ce5b94b79",
+        "android_client_info": {
+          "package_name": "com.capraraedefrancescosoft.progettomobidev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586529995472-g0gp2q1jphrrj2ah18tp66h3chmkvroq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOXdpjSq5DcoDfpIv3WJeOw1nb4lCqrbo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

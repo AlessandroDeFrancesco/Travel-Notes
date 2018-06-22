@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardBackgroundColor="@color/backgroundSecondary"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ripple"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/journalViewJournalIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/book_open_page_variant"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp" />
+
+    <LinearLayout
+        android:id="@+id/journalViewTextDescriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/journalViewJournalIcon"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JournalName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/journalViewJournalName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OwnerName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/journalViewJournalOwnerdId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JournalDescription"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/journalViewJournalDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="14/04/1992"
+            android:id="@+id/journalViewJournalDeparture"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="15/04/1992"
+            android:id="@+id/journalViewJournalReturn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

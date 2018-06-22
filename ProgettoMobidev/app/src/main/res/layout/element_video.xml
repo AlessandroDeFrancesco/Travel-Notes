@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:elevation="7dp"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.capraraedefrancescosoft.progettomobidev.widgets.VideoPlayerView
+        android:id="@+id/element"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
+    <ImageView
+        android:layout_alignBottom="@id/element"
+        android:layout_alignLeft="@id/element"
+        android:layout_alignRight="@id/element"
+        android:layout_alignTop="@id/element"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/stickers"
+        />
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:id="@+id/expandButton"
+        android:layout_alignBottom="@id/element"
+        android:layout_alignRight="@id/element"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/expand"/>
+
+    <ImageView
+        android:id="@+id/play_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play_circle_outline"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textDayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/textWhite"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/textDayOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saturday"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/textWhite"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/textMonthAndYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="April, 1992"
+            android:textSize="18sp"
+            android:textColor="@color/textWhite"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:scaleX="-1"
+        android:src="@drawable/simple_arrow"
+        android:background="@android:color/transparent"
+        android:onClick="onArrowClick"
+        android:id="@+id/daysLeftArrow"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/simple_arrow"
+        android:background="@android:color/transparent"
+        android:onClick="onArrowClick"
+        android:id="@+id/daysRightArrow"/>
+
+</RelativeLayout>

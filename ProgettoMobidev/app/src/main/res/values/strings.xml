@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Travel Notes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">567192203462240</string>
+    <string name="image">Image\nGallery</string>
+    <string name="take_photo">Camera</string>
+    <string name="take_video">Video</string>
+    <string name="video">Video\nGallery</string>
+    <string name="note">Note</string>
+    <string name="add_element">Add Element</string>
+    <string name="save_to_wall">Save to Wall</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</string>
+    <string name="journal_name">Journal Name</string>
+    <string name="journal_city">Journal Place</string>
+    <string name="journal_description">Description</string>
+    <string name="send_to">Send to</string>
+    <string name="app_link">Shared with:\nwww.travelnotes.com</string>
+    <string name="sharing_failed">Sharing failed</string>
+    <string name="journal_type">Type</string>
+    <string name="journal_departure">Departure</string>
+    <string name="journal_return">Return</string>
+    <string name="create">Create</string>
+    <string name="closingDialogTitle">Closing App</string>
+    <string name="closingDialogText">"Are you sure you want to exit?"</string>
+    <string name="abortingAddElementDialogTitle">Delete new element</string>
+    <string name="abortingAddElementDialogText">"Are you sure you want to delete the new element?"</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="new_journal">New Journal</string>
+    <string name="journals">Journals</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_information">Info Journal</string>
+    <string name="add_friends">ADD FRIENDS</string>
+    <string name="journal_details">JOURNAL DETAILS</string>
+    <string name="compressing">Optimizing..</string>
+    <string name="login">Login</string>
+    <string name="addFacebookFriends">Invite Friends</string>
+    <string name="infoFriends">JOURNAL PARTICIPANTS</string>
+    <string name="add_other_friends">ADD OTHER FRIENDS</string>
+    <string name="update_journal">UPDATE JOURNAL</string>
+    <string name="logout">Logout</string>
+    <string name="error">Error</string>
+    <string name="exit">Exit</string>
+    <string name="logout_confirmation">Are you sure to Logout from Application?</string>
+    <string name="exit_confirmation">Are you sure you want to exit from Application?</string>
+
+    <!-- Settings string -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_text_notifications">Enable/Disable notifications</string>
+    <string name="pref_header_logout">Logout</string>
+    <string name="pref_text_logout">Logout from application</string>
+    <string name="pref_text_enable_notification">Notification enabled</string>
+    <string name="pref_text_disable_notification">Notification disabled</string>
+
+
+    <string name="title_activity_maps">Journal Map</string>
+
+    <!-- Errors string -->
+    <string name="error_journal_name">Journal name cannot be empty</string>
+    <string name="error_special_char">Journal name cannot contain special characters.</string>
+    <string name="error_journal_description">Journal description cannot be empty</string>
+    <string name="error_journal_city">Journal city cannot be empty</string>
+    <string name="error_journal_departure">Departure date cannot be empty</string>
+    <string name="error_journal_return">Return date cannot be empty</string>
+    <string name="error_journal_form">Complete form.</string>
+    <string name="error_journal_already_exist">Journal already exist, please change name of journal.</string>
+    <string name="error_note">Note cannot be empty</string>
+    <string name="error_date">Departure date cannot be after return date</string>
+    <string name="error_connection">Error with internet connection, impossible to add element. Please, turn on internet.</string>
+    <string name="error_location_not_found">Error: location not found yet, would you like to add it anyway?</string>
+    <string name="error_location_accuracy">The accuracy of the location is less than 500 meters, would you like to add it anyway?</string>
+    <string name="error_location_time">The last location fix is more than 10 minutes ago, would you like to add it anyway?</string>
+    <string name="error_ffmpeg">FFmpeg not supported.</string>
+    <string name="error_server">Error with server or check your internet connection.\nDo you want retry the operation?</string>
+
+    <!-- Shared preferences name -->
+    <string name="preference_file_key">shared_preferences_travel_notes</string>
+    <string name="preference_notifications">Notification</string>
+    <string name="preference_last_journal_name">last_journal_name</string>
+    <string name="preference_last_journal_owner">last_journal_owner</string>
+    <string name="loading">Loading..</string>
+    <string name="defaultText">Default Text</string>
+
+
+</resources>

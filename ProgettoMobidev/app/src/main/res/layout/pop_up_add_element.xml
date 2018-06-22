@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:background="@android:drawable/editbox_background_normal">
+
+    <TextView
+        android:id="@+id/textViewAddElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/add_element"
+        android:textAlignment="center"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+        android:id="@+id/add_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAddElement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onAddPopUpClicked">
+
+        <ImageView
+            android:id="@+id/imageViewNotePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/note"/>
+
+        <TextView
+            android:id="@+id/textAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewNotePopup"
+            android:layout_centerHorizontal="true"
+            android:text="@string/note"
+            android:textAlignment="center"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutImagePopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_note"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/take_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".33"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onAddPopUpClicked">
+
+            <ImageView
+                android:id="@+id/imageViewCameraPopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/camera"/>
+
+            <TextView
+                android:id="@+id/textAddCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewCameraPopup"
+                android:layout_centerHorizontal="true"
+                android:text="@string/take_photo"
+                android:textAlignment="center"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".33"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onAddPopUpClicked">
+
+            <ImageView
+                android:id="@+id/imageViewCameraGalleryPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/image_gallery"/>
+
+            <TextView
+                android:id="@+id/textAddCameraGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewCameraGalleryPopup"
+                android:layout_centerHorizontal="true"
+                android:text="@string/image"
+                android:textAlignment="center"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutImagePopup"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/take_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".5"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onAddPopUpClicked">
+
+            <ImageView
+                android:id="@+id/imageViewVideoPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/video"/>
+
+            <TextView
+                android:id="@+id/textAddVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewVideoPopup"
+                android:layout_centerHorizontal="true"
+                android:text="@string/take_video"
+                android:textAlignment="center"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".5"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onAddPopUpClicked">
+
+            <ImageView
+                android:id="@+id/imageViewVideoGalleryPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/video_gallery"/>
+
+            <TextView
+                android:id="@+id/textAddVideoGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewVideoGalleryPopup"
+                android:layout_centerHorizontal="true"
+                android:text="@string/video"
+                android:textAlignment="center"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

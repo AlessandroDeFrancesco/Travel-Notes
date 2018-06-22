@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:elevation="7dp">
+
+    <ImageView
+        android:id="@+id/element"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@android:color/white"
+        />
+
+    <ImageView
+        android:id="@+id/stickers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/element"
+        android:layout_alignLeft="@id/element"
+        android:layout_alignRight="@id/element"
+        android:layout_alignTop="@id/element"
+        android:scaleType="fitXY"
+        android:src="@drawable/stickers"
+        />
+
+    <ImageButton
+        android:id="@+id/expandButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/element"
+        android:layout_alignRight="@id/element"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/expand"/>
+
+</RelativeLayout>

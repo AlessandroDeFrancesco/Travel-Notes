@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomInfoWindow">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoWindow" translatesAutoresizingMaskIntoConstraints="NO" id="Sdb-VW-hWa"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f2-o8-vIb" userLabel="NameLabel">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9w-ws-1VK" userLabel="DateLabel">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="xTk-cy-ApR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLT-Kk-vQz" userLabel="HourLabel">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="zaw-c5-e67"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-7S-BEc" userLabel="ContentImageView"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MW4-xl-ZSJ" userLabel="ContentTextView">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="trailing" secondItem="W5N-7S-BEc" secondAttribute="trailing" id="2G3-k4-hd3"/>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="3FU-P6-YzK"/>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="centerX" secondItem="L9w-ws-1VK" secondAttribute="centerX" id="7Vg-VX-cP5"/>
+                <constraint firstItem="zLT-Kk-vQz" firstAttribute="trailing" secondItem="L9w-ws-1VK" secondAttribute="trailing" id="998-X4-9iW"/>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="centerX" secondItem="Sdb-VW-hWa" secondAttribute="centerX" id="9Vs-Fj-GhD"/>
+                <constraint firstItem="zLT-Kk-vQz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="AmB-78-38q"/>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="leading" secondItem="W5N-7S-BEc" secondAttribute="leading" id="F3J-5V-0ZE"/>
+                <constraint firstItem="Sdb-VW-hWa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gzz-gx-Wzn"/>
+                <constraint firstItem="8f2-o8-vIb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="38" id="O4c-bf-GKB"/>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="centerX" secondItem="8f2-o8-vIb" secondAttribute="centerX" id="Pst-Pf-iUZ"/>
+                <constraint firstItem="W5N-7S-BEc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="SC8-Vt-Ob0"/>
+                <constraint firstAttribute="trailing" secondItem="Sdb-VW-hWa" secondAttribute="trailing" id="SkH-9y-Ry4"/>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="top" secondItem="W5N-7S-BEc" secondAttribute="top" id="Vuo-zs-40n"/>
+                <constraint firstItem="L9w-ws-1VK" firstAttribute="top" secondItem="8f2-o8-vIb" secondAttribute="bottom" id="Xb9-gd-2xF"/>
+                <constraint firstItem="MW4-xl-ZSJ" firstAttribute="bottom" secondItem="W5N-7S-BEc" secondAttribute="bottom" id="cpj-Ue-Ehk"/>
+                <constraint firstItem="8f2-o8-vIb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="e4N-Z9-KES"/>
+                <constraint firstItem="L9w-ws-1VK" firstAttribute="leading" secondItem="8f2-o8-vIb" secondAttribute="leading" id="fJj-qf-2yE"/>
+                <constraint firstAttribute="bottom" secondItem="Sdb-VW-hWa" secondAttribute="bottom" constant="-10" id="jH7-hC-Q3I"/>
+                <constraint firstItem="zLT-Kk-vQz" firstAttribute="top" secondItem="8f2-o8-vIb" secondAttribute="bottom" constant="8" symbolic="YES" id="pRH-6d-2ax"/>
+                <constraint firstAttribute="bottom" secondItem="W5N-7S-BEc" secondAttribute="bottom" constant="51" id="yRX-er-Bx4"/>
+                <constraint firstItem="Sdb-VW-hWa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ycw-K9-evD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="L9w-ws-1VK" id="hXJ-dS-8PW"/>
+                <outlet property="hourLabel" destination="zLT-Kk-vQz" id="OTy-gC-VHF"/>
+                <outlet property="imageContentView" destination="W5N-7S-BEc" id="O6u-u5-8qz"/>
+                <outlet property="nameLabel" destination="8f2-o8-vIb" id="DfU-3X-e28"/>
+                <outlet property="textContentView" destination="MW4-xl-ZSJ" id="z7k-FS-Eee"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="InfoWindow" width="163" height="133"/>
+    </resources>
+</document>

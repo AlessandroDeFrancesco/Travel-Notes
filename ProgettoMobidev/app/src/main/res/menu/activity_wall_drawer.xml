@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/new_journal"
+            android:icon="@drawable/book_open_page_variant"
+            android:title="@string/new_journal"/>
+        <item
+            android:id="@+id/journals"
+            android:icon="@drawable/archive"
+            android:title="@string/journals"/>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="@string/title_activity_settings"/>
+    </group>
+
+</menu>

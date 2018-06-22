@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+
+        style="@style/AppThemeActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".activities.NewJournalActivity">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@color/backgroundSecondary"
+            card_view:cardCornerRadius="4dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textViewDettagliJournal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/journal_details"
+                    android:textColor="@color/textWhite"
+                    android:textStyle="bold"/>
+
+
+                <com.capraraedefrancescosoft.progettomobidev.widgets.TextWithIcon
+                    android:id="@+id/newJournalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/journal_name"
+                    android:hint="@string/journal_name"/>
+
+                <com.capraraedefrancescosoft.progettomobidev.widgets.TextWithIcon
+                    android:id="@+id/newJournalDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/journal_description"
+                    android:hint="@string/journal_description"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/newJournalImageMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/map"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/newJournalCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toRightOf="@id/newJournalImageMap"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:gravity="start"
+                        android:hint="@string/journal_city"
+                        android:singleLine="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/newJournalImageType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/journal_type"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/newJournalImageType"
+                        android:background="@android:drawable/editbox_background_normal">
+
+                        <Spinner
+                            android:id="@+id/newJournalType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"
+                            tools:listitem="@layout/spinner_text_item"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.capraraedefrancescosoft.progettomobidev.widgets.CalendarView
+                        android:id="@+id/newJournalDepartureDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/journal_departure"/>
+
+                    <com.capraraedefrancescosoft.progettomobidev.widgets.CalendarView
+                        android:id="@+id/newJournalReturnDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/journal_return"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            card_view:cardBackgroundColor="@color/backgroundSecondary"
+            card_view:cardCornerRadius="4dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewAggiungiAmici"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/add_friends"
+                    android:textAlignment="center"
+                    android:textColor="@color/textWhite"
+                    android:textStyle="bold"/>
+
+                <ListView
+                    android:id="@+id/listaAmiciScelti"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/textViewAggiungiAmici"
+                    android:divider="@android:color/transparent"
+                    tools:listitem="@layout/facebook_friend_element"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:background="@drawable/com_facebook_button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="openAppInvite"
+                    android:padding="8dp"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/com_facebook_button_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/addFacebookFriends"
+                        android:textColor="@color/textWhite"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/createJournalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:minHeight="80dp"
+            android:minWidth="180dp"
+            android:onClick="createNewJournal"
+            android:text="@string/create"
+            android:textColor="@color/textWhite"/>
+
+
+    </LinearLayout>
+</ScrollView>

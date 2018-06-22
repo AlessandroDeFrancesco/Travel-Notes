@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.WallActivity"
+    tools:showIn="@layout/activity_wall_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wallLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            >
+
+            <com.bartoszlipinski.flippablestackview.FlippableStackView
+                android:id="@+id/pagerElements"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/backgroundPrimary"/>
+
+            <RelativeLayout
+                android:id="@+id/layoutNoElement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:text="Empty Journal\nAdd a new element"
+                    android:textAlignment="center"
+                    android:textColor="#5e5e5e"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/no_element"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagerDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.75"
+            android:overScrollMode="never"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutExpandedElement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <!---  UNICO MODO PER METTERE CENTRALE IL VIDEO ESPANSO E' QUELLO DI WRAPPARLO IN UN ALTRO LAYOUT -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <com.capraraedefrancescosoft.progettomobidev.widgets.VideoPlayerView
+                android:id="@+id/expandedVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/expandedImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>
