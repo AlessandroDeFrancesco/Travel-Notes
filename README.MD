@@ -18,6 +18,6 @@ The important features developed for the application are:
 
 We also developed a prototype for the website dedicated to the application, available at  http://travelnotesapp.altervista.org/.
 
-Developers:
+Developed in 2017 by:
 Alessandro De Francesco,
 Gianpaolo Caprara
