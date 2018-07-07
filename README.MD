@@ -10,7 +10,7 @@ The important features developed for the application are:
 - Remote storage of photos, videos and texts.
 - REST server to centralize the storage of photos, videos and texts of each journal.
 - Login through Facebook.
-- Saving metadata for every memory (date, owner, location).
+- Saving metadata for every data in storage (date, owner, location).
 - Integrated maps for the geolocation of memories.
 
 ![alt ios](Esempi/ios.png)
