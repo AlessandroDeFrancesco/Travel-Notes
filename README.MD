@@ -1,7 +1,7 @@
-University project developer for the course "Development of applications for mobile devices".
+University project developed for the course "Development of applications for mobile devices".
 The purpose of the project is the development of an application for Android and iOS in native languages and tools (Java / Android Studio and Objective-C / XCode).
 
-The application was designed with the aim of providing users with an easy and intuitive way to collect their memories of journeys made during their life in one place and to share them with their fellow travelers. In fact, the user interface has been developed with the appearance of a real journal in which each page contains a specific memory.
+The application was designed with the aim of providing users with an easy and intuitive way to collect their memories of journeys made during their life in one place and to share them with their fellow travellers. In fact, the user interface has been developed with the appearance of a real journal in which each page contains a specific memory.
 
 The important features developed for the application are:
 - Creation of travel journals.
